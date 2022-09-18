@@ -990,8 +990,9 @@ end)
 							
 local AnticheatDisabler = COB("World", {
 	Name = "Farther reach nuker",
+	Function = function(callback) 
+		if callback then							
 repeat task.wait(1)
-pcall(function()
 local a = Instance.new("Model")
 game.Players.LocalPlayer.Character.LowerTorso.Parent = a
 task.wait()

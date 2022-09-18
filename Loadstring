@@ -1,0 +1,4 @@
+task.spawn(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ddnut69A/Deznutprivate/main/Private.lua", true))()
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()

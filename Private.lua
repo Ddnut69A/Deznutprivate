@@ -993,7 +993,7 @@ local AnticheatDisabler = COB("World", {
 	Function = function(callback) 
 		if callback then
 repeat task.wait(1)
-pcall(function()
+pcall(function(callback)
 local a = Instance.new("Model")
 game.Players.LocalPlayer.Character.LowerTorso.Parent = a
 task.wait()

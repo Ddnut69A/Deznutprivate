@@ -987,3 +987,40 @@ chatconnection = repstorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.O
 		end
 	end
 end)
+							
+local AnticheatDisabler = COB("World", {
+	Name = "Farther reach nuker",
+	Function = function(callback) 
+		if callback then
+repeat task.wait(1)
+pcall(function()
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LowerTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.UpperTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LeftLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.RightLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.Head.Parent = a
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = a
+a.Parent = nil
+end)
+until false
+		end
+	end,
+	Default = false,
+	HoverText = "Keep nuker on or it wont work"
+})
+							

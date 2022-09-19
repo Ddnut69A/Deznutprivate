@@ -27,6 +27,7 @@ local repstorage = game:GetService("ReplicatedStorage")
 local oldchanneltabs = {}
 local lplr = game:GetService("Players").LocalPlayer
 
+task.spawn(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ddnut69A/Deznutprivate/main/added%20vape%20private'),true))()
-		
+end)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

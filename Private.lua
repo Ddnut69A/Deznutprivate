@@ -65,7 +65,7 @@ until false
 	HoverText = "Keep nuker on or it wont work"
 })
 
-local AnticheatDisabler = COB("Render", {
+local AnticheatDisabler = COB("World", {
     Name = "Sky",
     Function = function(callback) 
         if callback then

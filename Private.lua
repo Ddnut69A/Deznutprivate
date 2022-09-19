@@ -101,12 +101,12 @@ if Vignette == true then
 	
 	local ShadowFrame = Instance.new("ImageLabel")
 	ShadowFrame.Parent = Gui
-	ShadowFrame.AnchorPoint = Vector2.new(0,0)
-	ShadowFrame.Position = UDim2.new(0,0,0,0)
-	ShadowFrame.Size = UDim2.new(0,0,0,0)
+	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
 	ShadowFrame.BackgroundTransparency = 1
 	ShadowFrame.Image = ""
-	ShadowFrame.ImageTransparency = 0.0
+	ShadowFrame.ImageTransparency = 0.3
 	ShadowFrame.ZIndex = 10
 end
 						

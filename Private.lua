@@ -94,7 +94,22 @@ SunRays.Parent = Lighting
 Sky.Parent = Lighting
 Atm.Parent = Lighting
 
-
+if Vignette == true then
+	local Gui = Instance.new("ScreenGui")
+	Gui.Parent = StarterGui
+	Gui.IgnoreGuiInset = true
+	
+	local ShadowFrame = Instance.new("ImageLabel")
+	ShadowFrame.Parent = Gui
+	ShadowFrame.AnchorPoint = Vector2.new(0,0)
+	ShadowFrame.Position = UDim2.new(0,0,0,0)
+	ShadowFrame.Size = UDim2.new(0,0,0,0)
+	ShadowFrame.BackgroundTransparency = 1
+	ShadowFrame.Image = "rbxassetid://4576475446"
+	ShadowFrame.ImageTransparency = 0.0
+	ShadowFrame.ZIndex = 10
+end
+						
 Bloom.Intensity = 1
 Bloom.Size = 2
 Bloom.Threshold = 2

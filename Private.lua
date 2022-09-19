@@ -110,9 +110,9 @@ if Vignette == true then
 	ShadowFrame.ZIndex = 10
 end
 						
-Bloom.Intensity = 1
-Bloom.Size = 2
-Bloom.Threshold = 2
+Bloom.Intensiy = 0
+Bloom.Size = 0
+Bloom.Threshold = 0
 
 Blur.Size = 0
 

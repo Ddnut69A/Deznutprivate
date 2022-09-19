@@ -64,7 +64,8 @@ until false
 	Default = false,
 	HoverText = "Keep nuker on or it wont work"
 })
-		local AnticheatDisabler = COB("Render", {
+
+local AnticheatDisabler = COB("Render", {
     Name = "Sky",
     Function = function(callback) 
         if callback then
@@ -76,26 +77,11 @@ for i,v in pairs(Lighting:GetChildren()) do
 	v:Destroy()
 end
 wait(.1)
----Instance---
-local Atmosphere = Instance.new("Atmosphere")
+
 local Sky = Instance.new("Sky")
-local Bloom = Instance.new("BloomEffect")
-local ColorCorrection = Instance.new("ColorCorrectionEffect")
-local DepthOfField = Instance.new("DepthOfFieldEffect")
-local SunRays = Instance.new("SunRaysEffect")
---------------
 
---Parent--
-Atmosphere.Parent = game[LightingName]
 Sky.Parent = game[LightingName]
-Bloom.Parent = game[LightingName]
-ColorCorrection.Parent = game[LightingName]
-DepthOfField.Parent = game[LightingName]
-SunRays.Parent = game[LightingName]
-----------
 
---------Vibe Sky pack--------
-	--Vibe Sky Pack
 	game[LightingName].Sky.SkyboxBk = "rbxassetid://5084575798"
 	game[LightingName].Sky.SkyboxDn = "rbxassetid://5084575916"
 	game[LightingName].Sky.SkyboxFt = "rbxassetid://5103949679"
@@ -106,10 +92,9 @@ SunRays.Parent = game[LightingName]
 	game[LightingName].Sky.SunAngularSize = 0
     game[LightingName].Sky.SunTextureId = ""
     game[LightingName].Sky.MoonTextureId = ""
----------------------------------
+
         end
     end,
     Default = false,
-    HoverText = "IMPORTANT! THIS WILL NOT WORK WITH WINTER THEME OR FULLBRIGHT TURN THOSE OFF!"
-})
-				
+    HoverText = "OK
+})				

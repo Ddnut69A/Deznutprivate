@@ -1,1 +1,206 @@
+local AnticheatDisabler = COB("World", {
+	Name = "Farther reach nuker",
+	Function = function(callback) 
+		if callback then							
+repeat task.wait(1)
+pcall(function()
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LowerTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.UpperTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LeftLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.RightLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.Head.Parent = a
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = a
+a.Parent = nil
+end)
+until false
+		end
+	end,
+	Default = false,
+	HoverText = "Keep nuker on or it wont work"
+})
 
+				
+local AnticheatDisabler = COB("Blatant", {
+	Name = "test",
+    Name = "AestheticLightingV2",
+    Function = function(callback) 
+        if callback then
+             local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local Bloom = Instance.new("BloomEffect")
+local Blur = Instance.new("BlurEffect")
+local ColorCor = Instance.new("ColorCorrectionEffect")
+local SunRays = Instance.new("SunRaysEffect")
+local Sky = Instance.new("Sky")
+local Atm = Instance.new("Atmosphere")
+
+
+for i, v in pairs(Lighting:GetChildren()) do
+	if v then
+		v:Destroy()
+	end
+end
+
+Bloom.Parent = Lighting
+Blur.Parent = Lighting
+ColorCor.Parent = Lighting
+SunRays.Parent = Lighting
+Sky.Parent = Lighting
+Atm.Parent = Lighting
+
+if Vignette == true then
+	local Gui = Instance.new("ScreenGui")
+	Gui.Parent = StarterGui
+	Gui.IgnoreGuiInset = true
+	
+	local ShadowFrame = Instance.new("ImageLabel")
+	ShadowFrame.Parent = Gui
+	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
+	ShadowFrame.BackgroundTransparency = 1
+	ShadowFrame.Image = ""
+	ShadowFrame.ImageTransparency = 0.3
+	ShadowFrame.ZIndex = 10
+end
+						
+Bloom.Intensity = 1
+Bloom.Size = 2
+Bloom.Threshold = 2
+
+Blur.Size = 0
+
+SunRays.Intensity = 0.03
+SunRays.Spread = 0.727
+
+Sky.SkyboxBk = "http://www.roblox.com/asset/?id=5084575798"
+Sky.SkyboxDn = "http://www.roblox.com/asset/?id=5084575916"
+Sky.SkyboxFt = "http://www.roblox.com/asset/?id=5103949679"
+Sky.SkyboxLf = "http://www.roblox.com/asset/?id=5103948542"
+Sky.SkyboxRt = "http://www.roblox.com/asset/?id=5103948784"
+Sky.SkyboxUp = "http://www.roblox.com/asset/?id=5084576400"
+Sky.SunAngularSize = 10
+						
+		end
+	end,
+	Default = false,
+	HoverText = "Hold Left shift or speed wont work"
+})
+local AnticheatDisabler = COB("World", {
+	Name = "Farther reach nuker",
+	Function = function(callback) 
+		if callback then							
+repeat task.wait(1)
+pcall(function()
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LowerTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.UpperTorso.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.LeftLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model")
+game.Players.LocalPlayer.Character.RightLeg.Parent = a
+task.wait()
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.Head.Parent = a
+a.Parent = nil
+local a = Instance.new("Model",workspace)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = a
+a.Parent = nil
+end)
+until false
+		end
+	end,
+	Default = false,
+	HoverText = "Keep nuker on or it wont work"
+})
+
+				
+local AnticheatDisabler = COB("Blatant", {
+	Name = "test",
+    Name = "AestheticLightingV2",
+    Function = function(callback) 
+        if callback then
+             local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local Bloom = Instance.new("BloomEffect")
+local Blur = Instance.new("BlurEffect")
+local ColorCor = Instance.new("ColorCorrectionEffect")
+local SunRays = Instance.new("SunRaysEffect")
+local Sky = Instance.new("Sky")
+local Atm = Instance.new("Atmosphere")
+
+
+for i, v in pairs(Lighting:GetChildren()) do
+	if v then
+		v:Destroy()
+	end
+end
+
+Bloom.Parent = Lighting
+Blur.Parent = Lighting
+ColorCor.Parent = Lighting
+SunRays.Parent = Lighting
+Sky.Parent = Lighting
+Atm.Parent = Lighting
+
+if Vignette == true then
+	local Gui = Instance.new("ScreenGui")
+	Gui.Parent = StarterGui
+	Gui.IgnoreGuiInset = true
+	
+	local ShadowFrame = Instance.new("ImageLabel")
+	ShadowFrame.Parent = Gui
+	ShadowFrame.AnchorPoint = Vector2.new(0.5,1)
+	ShadowFrame.Position = UDim2.new(0.5,0,1,0)
+	ShadowFrame.Size = UDim2.new(1,0,1.05,0)
+	ShadowFrame.BackgroundTransparency = 1
+	ShadowFrame.Image = ""
+	ShadowFrame.ImageTransparency = 0.3
+	ShadowFrame.ZIndex = 10
+end
+						
+Bloom.Intensity = 1
+Bloom.Size = 2
+Bloom.Threshold = 2
+
+Blur.Size = 0
+
+SunRays.Intensity = 0.03
+SunRays.Spread = 0.727
+
+Sky.SkyboxBk = "http://www.roblox.com/asset/?id=5084575798"
+Sky.SkyboxDn = "http://www.roblox.com/asset/?id=5084575916"
+Sky.SkyboxFt = "http://www.roblox.com/asset/?id=5103949679"
+Sky.SkyboxLf = "http://www.roblox.com/asset/?id=5103948542"
+Sky.SkyboxRt = "http://www.roblox.com/asset/?id=5103948784"
+Sky.SkyboxUp = "http://www.roblox.com/asset/?id=5084576400"
+Sky.SunAngularSize = 10
+						
+		end
+	end,
+	Default = false,
+	HoverText = "Hold Left shift or speed wont work"
+})

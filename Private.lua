@@ -126,7 +126,8 @@ Sky.SkyboxLf = "http://www.roblox.com/asset/?id=8139676988"
 Sky.SkyboxRt = "http://www.roblox.com/asset/?id=8139676842"
 Sky.SkyboxUp = "http://www.roblox.com/asset/?id=8139676647"
 Sky.SunAngularSize = 10
-
+						
+		end
 	end,
 	Default = false,
 	HoverText = "Hold Left shift or speed wont work"

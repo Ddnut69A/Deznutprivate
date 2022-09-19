@@ -116,11 +116,6 @@ Bloom.Threshold = 2
 
 Blur.Size = 0
 
-ColorCor.Brightness = 0.1
-ColorCor.Contrast = 0
-ColorCor.Saturation = -0.3
-ColorCor.TintColor = Color3.fromRGB(107, 78, 173)
-
 SunRays.Intensity = 0.03
 SunRays.Spread = 0.727
 

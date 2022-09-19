@@ -127,19 +127,6 @@ Sky.SkyboxRt = "http://www.roblox.com/asset/?id=8139676842"
 Sky.SkyboxUp = "http://www.roblox.com/asset/?id=8139676647"
 Sky.SunAngularSize = 10
 
-Lighting.Ambient = Color3.fromRGB(128,128,128)
-Lighting.Brightness = 2
-Lighting.ColorShift_Bottom = Color3.fromRGB(0,0,0)
-Lighting.ColorShift_Top = Color3.fromRGB(0,0,0)
-Lighting.EnvironmentDiffuseScale = 0.2
-Lighting.EnvironmentSpecularScale = 0.2
-Lighting.GlobalShadows = false
-Lighting.OutdoorAmbient = Color3.fromRGB(0,0,0)
-Lighting.ShadowSoftness = 0.2
-Lighting.ClockTime = 14
-Lighting.GeographicLatitude = 45
-Lighting.ExposureCompensation = 0.5
-		end
 	end,
 	Default = false,
 	HoverText = "Hold Left shift or speed wont work"

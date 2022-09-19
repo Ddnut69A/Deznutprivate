@@ -105,14 +105,14 @@ if Vignette == true then
 	ShadowFrame.Position = UDim2.new(0,0,0,0)
 	ShadowFrame.Size = UDim2.new(0,0,0,0)
 	ShadowFrame.BackgroundTransparency = 1
-	ShadowFrame.Image = "rbxassetid://4576475446"
+	ShadowFrame.Image = ""
 	ShadowFrame.ImageTransparency = 0.0
 	ShadowFrame.ZIndex = 10
 end
 						
-Bloom.Intensiy = 0
-Bloom.Size = 0
-Bloom.Threshold = 0
+Bloom.Intensity = 1
+Bloom.Size = 2
+Bloom.Threshold = 2
 
 Blur.Size = 0
 

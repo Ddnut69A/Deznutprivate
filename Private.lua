@@ -119,12 +119,12 @@ Blur.Size = 0
 SunRays.Intensity = 0.03
 SunRays.Spread = 0.727
 
-Sky.SkyboxBk = "http://www.roblox.com/asset/?id=8139677359"
-Sky.SkyboxDn = "http://www.roblox.com/asset/?id=8139677253"
-Sky.SkyboxFt = "http://www.roblox.com/asset/?id=8139677111"
-Sky.SkyboxLf = "http://www.roblox.com/asset/?id=8139676988"
-Sky.SkyboxRt = "http://www.roblox.com/asset/?id=8139676842"
-Sky.SkyboxUp = "http://www.roblox.com/asset/?id=8139676647"
+Sky.SkyboxBk = "http://www.roblox.com/asset/?id=5084575798"
+Sky.SkyboxDn = "http://www.roblox.com/asset/?id=5084575916"
+Sky.SkyboxFt = "http://www.roblox.com/asset/?id=5103949679"
+Sky.SkyboxLf = "http://www.roblox.com/asset/?id=5103948542"
+Sky.SkyboxRt = "http://www.roblox.com/asset/?id=5103948784"
+Sky.SkyboxUp = "http://www.roblox.com/asset/?id=5084576400"
 Sky.SunAngularSize = 10
 						
 		end

@@ -64,7 +64,7 @@ until false
 })
 
 				
-local AnticheatDisabler = COB("Blatant", {
+local AnticheatDisabler = COB("World", {
 	Name = "test",
     Name = "Night sky",
     Function = function(callback) 
@@ -131,6 +131,33 @@ Sky.SunAngularSize = 10
 	HoverText = "Cool I guess"
 })
 
+		
+local AnticheatDisabler = COB("Blatant", {
+	Name = "Nerfed speed v2",
+	Function = function(callback) 
+		if callback then
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+UIS.InputBegan:connect(function(UserInput)
+        if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+            _G.Running = true
+                while wait(0.004) and _G.Running == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.12
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.12
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.12
+end
+        end
+end)
+UIS.InputEnded:connect(function(UserInput)
+        if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+                _G.Running = false
+        end
+end)
 
+		end
+	end,
+	Default = false,
+	HoverText = "Lags back less then speed v2"
+})
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

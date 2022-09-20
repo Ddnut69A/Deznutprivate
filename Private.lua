@@ -159,5 +159,39 @@ end)
 	Default = false,
 	HoverText = "Lags back less then speed v2"
 })
-
+			
+local AnticheatDisabler = COB("Blatant", {
+	Name = "Click tp",
+	Function = function(callback) 
+		if callback then
+if _G.WRDClickTeleport == nil then
+    _G.WRDClickTeleport = true
+    
+    local player = game:GetService("Players").LocalPlayer
+    local UserInputService = game:GetService("UserInputService")
+    local mouse = player:GetMouse()
+    repeat wait() until mouse
+    
+    UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            --Only click teleport if the toggle is enabled
+            if _G.WRDClickTeleport and UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+                player.Character:MoveTo(Vector3.new(mouse.Hit.x, mouse.Hit.y, mouse.Hit.z)) 
+            end
+        end
+    end)
+else
+    _G.WRDClickTeleport = not _G.WRDClickTeleport
+    if _G.WRDClickTeleport then
+        game.StarterGui:SetCore("SendNotification", {Title="Dnut"; Text="Click teleport enabled"; Duration=5;})
+    else
+        game.StarterGui:SetCore("SendNotification", {Title="Dnut"; Text="Click teleport disabled"; Duration=5;})
+    end
+end
+	
+		end
+	end,
+	Default = false,
+	HoverText = "Hold left shift then click (doesnt work without turning off ac)"
+})
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

@@ -195,4 +195,72 @@ end
 	HoverText = "Hold left shift then click (doesnt work without turning off ac)"
 })
 				
+task.spawn(function()
+	local AnticheatDisabler = COB("Blatant", {
+		Name = "Better speed v2",
+		Function = function(callback) 
+			if callback then
+				task.spawn(function()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Why-u-need-this/main/Better%20speed'),true))()
+				end)
+
+			end
+		end,
+		Default = false,
+		HoverText = "srry if pops up twice"
+	})
+end)
+	
+local AnticheatDisabler = COB("Blatant", {
+	Name = "Infinite Jump",
+	Function = function(callback) 
+		if callback then
+			local InfiniteJumpEnabled = true
+			game:GetService("UserInputService").JumpRequest:connect(function()
+				if InfiniteJumpEnabled then
+					game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+				end
+			end)
+		end
+	end,
+	Default = false,
+	HoverText = "srry if pops up twice"
+})
+
+local NoClickDelay = COB("Combat", {
+	["Name"]  = "NoClickDelay",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.NoClickDelay = true
+				local SwordCont = require(game:GetService("Players").LocalPlayer.PlayerScripts.TS.controllers.global.combat.sword["sword-controller"]).SwordController
+				local ItemTableFunc = require(game:GetService("ReplicatedStorage").TS.item["item-meta"]).getItemMeta
+				local ItemTable = debug.getupvalue(ItemTableFunc, 1)
+				for i2,v2 in pairs(ItemTable) do
+					if type(v2) == "table" and rawget(v2, "sword") then
+						v2.sword.attackSpeed = 0.0000000000000000000000000000000000001
+					end
+					SwordCont.isClickingTooFast = function() return false end
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.NoClickDelay = false
+				local SwordCont = require(game:GetService("Players").LocalPlayer.PlayerScripts.TS.controllers.global.combat.sword["sword-controller"]).SwordController
+				local ItemTableFunc = require(game:GetService("ReplicatedStorage").TS.item["item-meta"]).getItemMeta
+				local ItemTable = debug.getupvalue(ItemTableFunc, 1)
+				for i2,v2 in pairs(ItemTable) do
+					if type(v2) == "table" and rawget(v2, "sword") then
+						v2.sword.attackSpeed = 0.24
+					end
+					SwordCont.isClickingTooFast = function() return false end
+				end
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "noclick delay"
+})
+
+					
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

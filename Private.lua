@@ -194,4 +194,5 @@ end
 	Default = false,
 	HoverText = "Hold left shift then click (doesnt work without turning off ac)"
 })
+				
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/V0rt3xqa/Dnut/main/Dnut%20config'),true))()

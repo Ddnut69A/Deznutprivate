@@ -210,7 +210,36 @@ task.spawn(function()
 		HoverText = "srry if pops up twice"
 	})
 end)
-	
+
+task.spawn(function()
+	local AnticheatDisabler = COB("Blatant", {
+		Name = "test",
+		Function = function(callback) 
+			if callback then
+				task.spawn(function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+UIS.InputBegan:connect(function(UserInput)
+        if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+            _G.Running = true
+                while wait(0.0000001) and _G.Running == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.001
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.001
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.001
+end
+        end
+end)
+UIS.InputEnded:connect(function(UserInput)
+        if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+                _G.Running = false
+        end
+end)
+		end,
+		Default = false,
+		HoverText = "srry if pops up twice"
+	})
+end)
+					
 local AnticheatDisabler = COB("Blatant", {
 	Name = "Infinite Jump",
 	Function = function(callback) 
@@ -238,7 +267,7 @@ local NoClickDelay = COB("Combat", {
 				local ItemTable = debug.getupvalue(ItemTableFunc, 1)
 				for i2,v2 in pairs(ItemTable) do
 					if type(v2) == "table" and rawget(v2, "sword") then
-						v2.sword.attackSpeed = 0.0000000000000000000000000000000000001
+						v2.sword.attackSpeed = 0.000000000000000000000000001
 					end
 					SwordCont.isClickingTooFast = function() return false end
 				end
